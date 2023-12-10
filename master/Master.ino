@@ -5,12 +5,6 @@
 #include <ArduinoJson.h>
 #include "seatStatusSender.h"   //와이파이로 서버에 http put하는 헤더
 
-// 와이파이 정보, http 설정
-const char *ssid = "SangWon";
-const char *password = "11111111";
-const char *server = "144.24.90.181";
-const String resourcePath = "/iot-comm/ws/fallback/seats";
-
 
 #define TXpin 11
 #define RXpin 10
