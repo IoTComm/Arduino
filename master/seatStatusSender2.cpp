@@ -4,6 +4,7 @@ const char *ssid = "SangWon";
 const char *password = "11111111";
 const char *server = "144.24.90.181";
 const String resourcePath = "/iot-comm/ws/fallback/seats";
+String responsePayload
 
 void setupWiFi() {
   Serial.begin(115200);
