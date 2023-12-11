@@ -7,5 +7,6 @@
 
 void setupWiFi();
 String sendSeatStatus(String &payload);
+String sendeEmptySeatJson();
 
 #endif // SEAT_STATUS_SENDER_H
