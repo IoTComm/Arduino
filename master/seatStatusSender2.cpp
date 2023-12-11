@@ -1,19 +1,20 @@
-#include "seatStatusSender.h"
+#include "seatStatusSender2.h"
 
 const char *ssid = "SangWon";
 const char *password = "11111111";
 const char *server = "144.24.90.181";
 const String resourcePath = "/iot-comm/ws/fallback/seats";
-String responsePayload
+String responsePayload;
 
 void setupWiFi() {
   Serial.begin(115200);
 
   // Connect to Wi-Fi
   WiFi.begin(ssid, password);
+  Serial.print("Try connect to wifi");
   while (WiFi.status() != WL_CONNECTED) {
     delay(1000);
-    Serial.println("Connecting to WiFi...");
+    Serial.print("..");
   }
   Serial.println("Connected to WiFi");
 }
